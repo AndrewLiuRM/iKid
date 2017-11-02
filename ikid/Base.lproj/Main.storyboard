@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select the type of jokes you would like to hear." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SC0-nL-i5G">
+                                <rect key="frame" x="10" y="238" width="354" height="191"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ekt-el-0kK">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Good" width="118" id="8yw-FR-wTC">
+                                        <connections>
+                                            <action selector="navigateClicked:" destination="BYZ-38-t0r" id="pgw-Xg-bxc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Pun" width="154" id="LPb-pq-ZnL">
+                                        <connections>
+                                            <action selector="navigateClicked:" destination="BYZ-38-t0r" id="dl3-fx-QZG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Dad" width="114" id="p8D-IR-XFB">
+                                        <connections>
+                                            <action selector="navigateClicked:" destination="BYZ-38-t0r" id="uh1-5H-TxS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="fR9-gq-bxt" kind="show" identifier="JokeSegue" id="SaB-LM-Veh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="33.733133433283363"/>
+        </scene>
+        <!--Joke View Controller-->
+        <scene sceneID="Y3j-pD-xii">
+            <objects>
+                <viewController id="fR9-gq-bxt" customClass="JokeViewController" customModule="ikid" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="07l-su-ayI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fa0-CD-th3">
+                                <rect key="frame" x="16" y="220" width="343" height="227"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vL8-w5-opy">
+                                <rect key="frame" x="129" y="81" width="116" height="86"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CLG-Mo-3bH">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <navigationItem title="Navigation" id="jvy-gz-R3I">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="bCi-M2-IOh">
+                                            <connections>
+                                                <segue destination="b0j-Me-u7o" kind="unwind" unwindAction="goHomeWithUnwindSegue:" id="fOM-ro-3Pr"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Next" id="PrD-aV-duG">
+                                            <connections>
+                                                <segue destination="jRH-W4-epJ" kind="modal" identifier="PunchlineSegue" modalTransitionStyle="flipHorizontal" id="jVV-Qf-kPA"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ERN-Mb-Pd7"/>
+                    </view>
+                    <connections>
+                        <outlet property="content" destination="fa0-CD-th3" id="KJr-GP-Ug3"/>
+                        <outlet property="type" destination="vL8-w5-opy" id="6Az-sg-OAD"/>
+                    </connections>
+                </viewController>
+                <exit id="b0j-Me-u7o" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3U-zb-owR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1349.5999999999999" y="33.733133433283363"/>
+        </scene>
+        <!--Punchline View Controller-->
+        <scene sceneID="lZf-7n-b4g">
+            <objects>
+                <viewController id="jRH-W4-epJ" customClass="PunchlineViewController" customModule="ikid" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I77-nh-FdV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jfq-ZF-aNl">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <navigationItem title="Navigation" id="zV2-ew-l68">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="q7p-p4-8gb">
+                                            <connections>
+                                                <segue destination="f9G-0w-J2R" kind="unwind" unwindAction="JokeWithUnwindSegue:" id="2u2-qJ-ITK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Home" id="Mre-Qw-ZRG">
+                                            <connections>
+                                                <segue destination="f9G-0w-J2R" kind="unwind" unwindAction="goHomeWithUnwindSegue:" id="yeH-HN-v3w"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khH-2M-GgZ">
+                                <rect key="frame" x="16" y="241" width="343" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="TeP-Ud-2f5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="geg-V1-y66"/>
+                    <connections>
+                        <outlet property="punchlineLable" destination="khH-2M-GgZ" id="f15-nD-AQ9"/>
+                    </connections>
+                </viewController>
+                <exit id="f9G-0w-J2R" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNw-yc-WQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2065" y="21"/>
+        </scene>
+    </scenes>
+</document>
