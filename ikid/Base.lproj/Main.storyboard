@@ -30,19 +30,24 @@
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Good" width="118" id="8yw-FR-wTC">
+                                    <barButtonItem title="Good" id="8yw-FR-wTC">
                                         <connections>
                                             <action selector="navigateClicked:" destination="BYZ-38-t0r" id="pgw-Xg-bxc"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Pun" width="154" id="LPb-pq-ZnL">
+                                    <barButtonItem title="Pun" width="113.5" id="LPb-pq-ZnL">
                                         <connections>
                                             <action selector="navigateClicked:" destination="BYZ-38-t0r" id="dl3-fx-QZG"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Dad" width="114" id="p8D-IR-XFB">
+                                    <barButtonItem title="Dad" width="223" id="p8D-IR-XFB">
                                         <connections>
                                             <action selector="navigateClicked:" destination="BYZ-38-t0r" id="uh1-5H-TxS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Image" width="128" id="rht-JN-QIR">
+                                        <connections>
+                                            <segue destination="WpR-tl-ZfA" kind="show" id="1EG-fw-Mbl"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -160,5 +165,72 @@
             </objects>
             <point key="canvasLocation" x="2065" y="21"/>
         </scene>
+        <!--Ad Controller-->
+        <scene sceneID="GnC-DZ-IqM">
+            <objects>
+                <viewController id="WpR-tl-ZfA" customClass="AdController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Es0-yN-8dt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Man" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZd-Hq-tOn">
+                                <rect key="frame" x="132" y="151" width="111" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Woman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97h-xg-rpp">
+                                <rect key="frame" x="137" y="323" width="101" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CS Major" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjS-GV-Xmx">
+                                <rect key="frame" x="131" y="488" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_5354" highlightedImage="IMG_5354.JPG" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tQB-JB-0vo">
+                                <rect key="frame" x="122" y="15" width="130" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_7655" highlightedImage="IMG_7655.JPG" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jph-wm-J9O">
+                                <rect key="frame" x="122" y="180" width="130" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bald" highlightedImage="bald.jpg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4IQ-hL-dPh">
+                                <rect key="frame" x="122" y="352" width="130" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2a-go-Jwb">
+                                <rect key="frame" x="320" y="617" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <segue destination="5uj-Ea-kcZ" kind="unwind" unwindAction="goHomeWithUnwindSegue:" id="v7o-Tz-ofc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Of5-Tq-P1H"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WEN-kC-cBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="5uj-Ea-kcZ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="696"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="IMG_5354" width="600" height="600"/>
+        <image name="IMG_5354.JPG" width="16" height="16"/>
+        <image name="IMG_7655" width="1600" height="1600"/>
+        <image name="IMG_7655.JPG" width="16" height="16"/>
+        <image name="bald" width="600" height="600"/>
+        <image name="bald.jpg" width="16" height="16"/>
+    </resources>
 </document>
